@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Kalkulator chorobowy dla Oli</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header_title"> Kalkulator wynagrodzenia chorobowego dla Pani Aleksandry </h1>
+    </header>
+
+
+
+    <main>
+
+        <section class="sick-calculator">
+
+            <div class="sick-calculator_brutto-gain">
+                <h2>Wynagrodzenie brutto</h2>
+                <input id="brutto-input" placeholder="Wpisz wynagrodzenie brutto....">
+                <p class=" msg calculator_brutto-msg"></p>
+            </div>
+
+            <div class="sick-calculator_sickdays-number">
+                <h2>Liczba chorych dni </h2>
+                <input type="number" min="1" max="30" maxlength="2" id="sickdays-input" placeholder="Wpisz liczbe....">
+                <p class="msg calculator_number-msg"></p>
+            </div>
+            <div class="buttons">
+
+                <button class="conv">Oblicz</button>
+                <button class="reset">Resetuj</button>
+
+            </div>
+
+            <div class="sick-calculator_results">
+
+                <p class="result"> Podstawa wymiaru to :<span class="result1"></span></p>
+                <p class="result resultsick"> Wynagrodzenia za dni chorobowe to <span class="result2"></span></p>
+                <p class="result"> Wynagrodzenie za przepracowaną część miesiąca to <span class="result3"></span></p>
+
+            </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/chorobowe.js"></script>
+</body>
+
+</html>
